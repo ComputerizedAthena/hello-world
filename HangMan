@@ -1,0 +1,179 @@
+def Program():
+    Life = 7
+    result = 0
+    print "You're at the noose. Nobody believes you are innocent but you."
+    print "You remember if you say the code word that they will let you"
+    print"go, but the problem is that you don't remember tha code word."
+    print "You have 5 choices at the very begining to chooose which word"
+    print "you want to do. You have a total of 7 tries, to guess a letter."
+    print "IF you can get it, you live, if not, well... I call your farm!!"
+    print "Oh, just a few little pointers, captialize your letters, only"
+    print "type the letter once, and when you want to go to the main menu" 
+    print "just type '/'. Try not to die! Haha, good luck. "
+    print "1,2,3,4,5"
+    number = raw_input("It's time to choose...")
+    if int(number) == 1:
+        print "This word has 4 letters.Seems easy enough"
+        while Life > 0:
+            myWord1 = raw_input("Enter in the right letter or...")
+            if (myWord1) == 'C':
+                print "Mhmm Well this is the first letter"
+                result = result + 1
+                Life = Life + 1
+            elif (myWord1) == 'L':
+                print "Guess you got the second letter in the word"
+                result = result + 1
+                Life = Life + 1
+            elif (myWord1) == 'U':
+                print "Third letter, not bad"
+                result = result + 1
+                Life = Life + 1
+            elif (myWord1) == 'E':
+                print "Well at least you got the last letter"
+                result = result + 1
+                Life = Life + 1
+            elif (myWord1) == '/':
+                Life = 0
+            if result == 4:
+                print "You win! Good Job. I guess you survived and get to keep your farm. Remember if you want to return to the main menu just press '/'"
+            else:
+                Life = Life -1;
+        else:
+            print "Bye Bye"
+    elif int(number) == 2:
+        print "This word has 5 letters.This one is pretty difficult, not a well known word.."
+        while Life > 0:
+            myWord2 = raw_input("Enter in the right letter or...")
+            if (myWord2) == 'J':
+                print "Mhmm Well this is the first letter"
+                result = result + 1
+                Life = Life + 1
+            elif (myWord2) == 'U':
+                print "Guess you got the second letter in the word, oh, and the fourth."
+                result = result + 2
+                Life = Life + 1
+            elif (myWord2) == 'G':
+                print "Third letter, not bad"
+                result = result + 1
+                Life = Life + 1
+            elif (myWord2) == 'M':
+                print "Well at least you got the last letter"
+                result = result + 1
+                Life = Life + 1
+            elif (myWord2) == '/':
+                Life = 0
+            if result == 5:
+                print "You win! Good Job. I guess you survived and get to keep your farm."
+            else:
+                Life = Life -1;
+        else:
+            print "Bye Bye"
+    elif int(number) == 3:
+        print "This word has 6 letters.This one is hard"
+        result=""
+        while Life > 0:
+            myWord3 = raw_input("Enter in the right letter or...")
+            if (myWord3) == 'J':
+                print "Mhmm Well this is the first letter"
+                Life = Life + 1
+                result = result + 1
+                
+            elif (myWord3) == 'U':
+                print "Guess you got the second letter in the word"
+                Life = Life + 1
+                result = result + 1
+            elif (myWord3) == 'M':
+                print "Third letter, not bad"
+                Life = Life + 1
+                result = result + 1
+            elif (myWord3) == 'B':
+                print "Well you got the fourth letter, good job"
+                Life = Life + 1
+                result = result + 1
+            elif (myWord3) == 'L':
+                print "5th letter, not bad"
+                Life = Life + 1
+                result = result + 1
+            elif (myWord3) == 'E':
+                print "So it appears you can get the last letter of the word"
+                Life = Life + 1
+            elif (myWord3) == '/':
+                Life = 0
+            if result == 6:
+                print "You win! Good Job. I guess you survived and get to keep your farm."
+            else:
+                Life = Life -1;
+        else:
+            print "Bye Bye"
+    elif int(number) == 4:
+        print "This word has 5 letters. One of the hardest of all of them, good choice. I'll give you a hint, its a letter in a differnt language"
+        while Life > 0:
+            myWord4 = raw_input("Enter in the right letter or...")
+            if (myWord4) == 'Q':
+                print "Mhmm Well this is the first letter"
+                Life = Life + 1
+                result = result + 1
+            elif (myWord4) == 'O':
+                print "Guess you got the second letter in the word"
+                Life = Life + 1
+                result = result + 1
+            elif (myWord4) == 'P':
+                print "Third letter, not bad"
+                Life = Life + 1
+                result = result + 1
+            elif (myWord4) == 'H':
+                print "Fourth letter, huh.."
+                Life = Life + 1
+                result = result + 1
+            elif (myWord4) == 'S':
+                print "Well at least you got the last letter"
+                Life = Life + 1
+                result = result + 1
+            elif (myWord4) == '/':
+                Life = 0
+            if result == 5:
+                print "You win! Good Job. I guess you survived and get to keep your farm."
+            else:
+                Life = Life -1;
+        else:
+            print "Bye Bye"
+    elif int(number) == 5:
+        print "This word has 6 letters.And the hardest word. What did you expect?"
+        while Life > 0:
+            myWord5 = raw_input("Enter in the right letter or...")
+            if (myWord5) == 'H':
+                print "Mhmm Well this is the first letter"
+                Life = Life + 1
+                result = result + 1
+            elif (myWord5) == 'U':
+                print "Guess you got the second letter in the word"
+                Life = Life + 1
+                result = result + 1
+            elif (myWord5) == 'T':
+                print "Third letter, not bad"
+                Life = Life + 1
+                result = result + 1
+            elif (myWord5) == 'Z':
+                print "Well you got the fourth letter, good job"
+                Life = Life + 1
+                result = result + 1
+            elif (myWord5) == 'P':
+                print "5th letter, not bad"
+                Life = Life + 1
+                result = result + 1
+            elif (myWord5) == 'A':
+                print "So it appears you can get the last letter of the word"
+                Life = Life + 1
+            elif (myWord5) == '/':
+                Life = 0
+            if result == 6:
+                print "You win! Good Job. I guess you survived and get to keep your farm."
+            else:
+                Life = Life -1;
+        else:
+            print "Bye Bye"
+    else: 
+        print "This is not a valid number, haha you lose. I get your farm!"
+        Life = 0
+while 7 == 7:
+    Program()
